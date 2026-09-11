@@ -4,6 +4,9 @@
 
 #include "Application.h"
 
+#include "Engine/Events/ApplicationEvent.h"
+#include "Engine/Log.h"
+
 namespace Engine {
 
     Application::Application() {
@@ -15,6 +18,9 @@ namespace Engine {
     }
 
     void Application::Run() {
+        WindowsResizeEvent e(1200, 720);
+        EG_TRACE(e.ToString());
+
         while (true);
     }
 }

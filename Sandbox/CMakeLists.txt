@@ -1,7 +1,13 @@
 add_executable(Sandbox
-        src/SanboxApp.cpp
+        src/SandboxApp.cpp
 )
 
 target_link_libraries(Sandbox
-        PRIVATE Engine
+        PRIVATE
+        Engine
+)
+
+target_include_directories(Sandbox
+        PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/../Engine/src
 )

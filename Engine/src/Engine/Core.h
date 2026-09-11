@@ -15,4 +15,6 @@
 
 #define ENGINE_API // Remove for windows
 
+#define BIT(x) (1 << x)
+
 #endif //ENGINE_CORE_H
